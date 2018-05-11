@@ -1,0 +1,9 @@
+How To Contribute To AuGit
+==========================
+
+New Features/Changes
+--------------------
+1) Features etc. can be discussed in the Facebook Group if you want input etc. 
+2) Once we have determined that a feature or change should be made you should add a card to 
+3) When adding a feature note its section in [] at the beginning of the note and the number
+
