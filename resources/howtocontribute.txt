@@ -12,7 +12,7 @@ Adding Features/Changes
 -----------------------
 1) If you want to add a feature go and pick it up from the icebox and assign yourself to it so that we don't have 2
     people working on the same feature at once
-2) Build each feature on a new branch where the branch name is the [...] from the icebox (you can create a branch with title       [...] with the command `git checkout -b [...]`)
+2) Build each feature on a new branch where the branch name is the [...] from the icebox to in progress (you can create a branch with title       [...] with the command `git checkout -b [...]`), add @(your-username) to the beginning of the note
 3) If you aren't done working on your current branch the change to master with checkout pull master and THEN move to a new branch
 
 
