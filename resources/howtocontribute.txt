@@ -4,6 +4,23 @@ How To Contribute To AuGit
 New Features/Changes
 --------------------
 1) Features etc. can be discussed in the Facebook Group if you want input etc. 
-2) Once we have determined that a feature or change should be made you should add a card to 
-3) When adding a feature note its section in [] at the beginning of the note and the number
+2) Once we have determined that a feature or change should be made you should add a card to the icebox 
+    (here: https://github.com/reecemartin/AuGit/projects/1)
+3) When adding a feature its note should follow the format [name-issue number]
 
+Adding Features/Changes
+-----------------------
+1) If you want to add a feature go and pick it up from the icebox and assign yourself to it so that we don't have 2
+    people working on the same feature at once
+2) Build each feature on a new branch where the branch name is the [...] from the icebox (you can create a branch with title       [...] with the command `git checkout -b [...]`)
+3) If you aren't done working on your current branch the change to master with checkout pull master and THEN move to a new branch
+
+
+Useful Git Stuff
+----------------
+
+- If you want to undo a commit that you haven't pushed simply do git reset HEAD~
+- If you want to change from branch to branch you should stash your changes (saves them without commiting them) with git stash
+    you can get stashed changes back with git stash pop
+- You can always see your current branch with git branch
+- Visualizers like gitk are VERY useful
