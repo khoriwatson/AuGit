@@ -2,28 +2,47 @@ import com.sun.deploy.util.StringUtils;
 
 public class funcDetection {
 
-  /**
-   * This function is from:
-   * http://www.java2s.com/Tutorial/Java/0040__Data-Type/ComparestwoStringsandreturnstheportionwheretheydiffer.htm
-   * Priority: Create our own version.
-   *
-   * @param str1
-   * @param str2
-   * @return String
-   */
   public static String difference(String str1, String str2) {
-    if (str1 == null) {
-      return str2;
-    }
-    if (str2 == null) {
-      return str1;
-    }
-    int at = indexOfDifference(str1, str2);
-    if (at == -1) {
+    if (str1 == null && str2 == null) {
       return "";
     }
-    return str2.substring(at);
+
+    if (str2 == null){
+      return str1;
+    }
+
+    int changeIndex = indexOfDifference(str1, str2);
+
+    if (changeIndex == -1){
+      return "";
+    }
+
+    return str2.substring(changeIndex);
+
   }
+  
+//  /**
+//   * This function is from:
+//   * http://www.java2s.com/Tutorial/Java/0040__Data-Type/ComparestwoStringsandreturnstheportionwheretheydiffer.htm
+//   * Priority: Create our own version.
+//   *
+//   * @param str1
+//   * @param str2
+//   * @return String
+//   */
+//  public static String difference(String str1, String str2) {
+//    if (str1 == null) {
+//      return str2;
+//    }
+//    if (str2 == null) {
+//      return str1;
+//    }
+//    int at = indexOfDifference(str1, str2);
+//    if (at == -1) {
+//      return "";
+//    }
+//    return str2.substring(at);
+//  }
 
   /**
    * This function is from:
